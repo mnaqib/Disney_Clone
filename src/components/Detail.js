@@ -13,7 +13,7 @@ function Detail() {
       .get()
       .then((doc) => {
         if (doc.exists) {
-          setMovie(doc.data);
+          setMovie(doc.data());
         } else {
           navigate("/");
         }
